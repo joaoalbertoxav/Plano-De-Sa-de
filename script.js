@@ -41,8 +41,8 @@ function displayResults(planos) {
             <thead class="thead-dark">
                 <tr>
                     <th>Planos: </th>
-                    <th>Operadora A</th>
-                    <th>Operadora B</th>
+                    <th>Plano A</th>
+                    <th>Plano B</th>
                 </tr>
             </thead>
             <tbody>
