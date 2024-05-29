@@ -1,18 +1,18 @@
 document.getElementById('calcForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
-    const age = parseInt(document.getElementById('age').value);
-    const weight = parseInt(document.getElementById('weight').value);
-    const height = parseInt(document.getElementById('height').value);
-    const imc = weight / ((height / 100) ** 2);
+    const Idade = parseInt(document.getElementById('idade').value);
+    const Peso = parseInt(document.getElementById('peso').value);
+    const Altura = parseInt(document.getElementById('altura').value);
+    const imc = Peso / ((Altura / 100) ** 2);
 
     const fatorComorbidade = getFatorComorbidade(imc);
 
     const planos = {
         A: {
-            basico: 100 + (age * 10 * (imc / 10)),
-            standard: (150 + (age * 15)) * (imc / 10),
-            premium: (200 - (imc * 10) + (age * 20)) * (imc / 10)
+            basico: 100 + (Idade * 10 * (imc / 10)),
+            standard: (150 + (Idade * 15)) * (imc / 10),
+            premium: (200 - (imc * 10) + (Idade * 20)) * (imc / 10)
         },
         B: {
             basico: 100 + (fatorComorbidade * 10 * (imc / 10)),
@@ -36,7 +36,7 @@ function getFatorComorbidade(imc) {
 function displayResults(planos) {
     const resultsDiv = document.getElementById('results');
     resultsDiv.innerHTML = `
-        <h2>Resultados</h2>
+        <h2>Resultados: </h2>
         <table class="table table-bordered">
             <thead class="thead-dark">
                 <tr>

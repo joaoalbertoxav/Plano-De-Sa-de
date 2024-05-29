@@ -1,8 +1,14 @@
+.fundo{
+    margin-right: 250px;
+    margin-left: 250px;
+}
+
 body {
-    background-color: #bad2ec;
+    background-color: #aeb9c4;
 }
 
 h1 {
+    text-shadow: 1px 1px 1px white;
     text-align: center;
 }
 
@@ -13,8 +19,10 @@ h1 {
 table {
     width: 100%;
     margin-top: 20px;
+    padding: 1%;
 }
 
 th, td {
+    
     text-align: center;
 }
