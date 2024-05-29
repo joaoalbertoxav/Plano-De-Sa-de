@@ -1,0 +1,20 @@
+body {
+    background-color: #bad2ec;
+}
+
+h1 {
+    text-align: center;
+}
+
+#results {
+    display: none;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+th, td {
+    text-align: center;
+}
