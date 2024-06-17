@@ -26,7 +26,7 @@ document.getElementById('calcForm').addEventListener('submit', function(event) {
 
 function getFatorComorbidade(imc) {
     if (imc < 18.5) return 10;
-    if (imc < 24.9) return 1;
+    if (imc < 25.9) return 1;
     if (imc < 29.9) return 6;
     if (imc < 34.9) return 10;
     if (imc < 39.9) return 20;
