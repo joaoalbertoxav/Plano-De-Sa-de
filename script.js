@@ -12,12 +12,12 @@ document.getElementById('calcForm').addEventListener('submit', function(event) {
         A: {
             basico: 100 + (Idade * 10 * (imc / 10)),
             standard: (150 + (Idade * 15)) * (imc / 10),
-            premium: (200  + (Idade * 20)) * (imc / 10)
+            premium:  (200 - (imc * 10) + (Idade * 20)) * (imc / 10)
         },
         B: {
             basico: 100 + (fatorComorbidade * 10 * (imc / 10)),
             standard: (150 + (fatorComorbidade * 15)) * (imc / 10),
-            premium: (200 + (fatorComorbidade * 20)) * (imc / 10)
+            premium: (200 - (imc * 10) + (fatorComorbidade * 20)) * (imc / 10)
         }
     };
 
